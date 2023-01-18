@@ -1,0 +1,288 @@
+{
+	"info": {
+		"_postman_id": "a6104564-86df-4801-a651-1dc583125d75",
+		"name": "Soal_campaign",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18565549"
+	},
+	"item": [
+		{
+			"name": "[Movie] Get All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2010/api/v1/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2010",
+					"path": [
+						"api",
+						"v1",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Movie] Get Detail Movie",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2010/api/v1/movies/detail/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2010",
+					"path": [
+						"api",
+						"v1",
+						"movies",
+						"detail",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Movie] New Movie",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Kokoro\",\r\n    \"language\":\"Japan\",\r\n    \"status\":\"ongoing\",\r\n    \"rating\":5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2010/api/v1/movies/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2010",
+					"path": [
+						"api",
+						"v1",
+						"movies",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Movie] Delete data",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2010/api/v1/movies/33",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2010",
+					"path": [
+						"api",
+						"v1",
+						"movies",
+						"33"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Movie] Update Data Movie",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Haruto\",\r\n    \"language\":\"Thailand\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2010/api/v1/movies/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2010",
+					"path": [
+						"api",
+						"v1",
+						"movies",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Cast] Get all Casts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2010/api/v1/casts/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2010",
+					"path": [
+						"api",
+						"v1",
+						"casts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Cast] Get Detail Cast",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2010/api/v1/casts/detail/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2010",
+					"path": [
+						"api",
+						"v1",
+						"casts",
+						"detail",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Cast] New Cast",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Harry\",\r\n    \"birthday\": \"2001-10-21\",\r\n    \"deadday\": \"2025-06-10\",\r\n    \"rating\": 3.6\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2010/api/v1/casts/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2010",
+					"path": [
+						"api",
+						"v1",
+						"casts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Cast] Delete data cast",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2010/api/v1/casts/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2010",
+					"path": [
+						"api",
+						"v1",
+						"casts",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Cast] Update Data cast",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Fadli\",\r\n    \"birthday\": \"2003-01-04\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2010/api/v1/casts/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2010",
+					"path": [
+						"api",
+						"v1",
+						"casts",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Movie_cast] Get ALL data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2010/api/v1/movie_cast",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2010",
+					"path": [
+						"api",
+						"v1",
+						"movie_cast"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
